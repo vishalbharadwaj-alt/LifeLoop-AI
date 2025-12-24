@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>LifeLoop AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+    <style>
+      :root {
+        --accent: 79, 70, 229;
+        --accent-glow: rgba(79, 70, 229, 0.4);
+      }
+      * { font-family: 'Poppins', sans-serif; }
+      body { -webkit-tap-highlight-color: transparent; }
+      .leaflet-container { background: #0F172A; }
+      
+      .accent-bg { background-color: rgb(var(--accent)); }
+      .accent-text { color: rgb(var(--accent)); }
+      .accent-border { border-color: rgb(var(--accent)); }
+      .accent-ring { --tw-ring-color: rgba(var(--accent), 0.5); }
+      .accent-bg-soft { background-color: rgba(var(--accent), 0.1); }
+      .accent-border-soft { border-color: rgba(var(--accent), 0.2); }
+      
+      .glow-accent {
+        box-shadow: 0 0 25px rgba(var(--accent), 0.3);
+      }
+      
+      /* Hide scrollbars but keep functionality */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  </head>
+  <body class="bg-[#F8FAFC]">
+    <div id="root"></div>
+  </body>
+</html>

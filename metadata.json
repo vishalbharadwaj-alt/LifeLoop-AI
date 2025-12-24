@@ -1,0 +1,9 @@
+{
+  "name": "LifeLoop AI",
+  "description": "An AI-powered assistant for campus safety risks, hostel food nutrition tracking, and health suggestions.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone",
+    "camera"
+  ]
+}
